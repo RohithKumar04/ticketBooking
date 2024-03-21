@@ -4,8 +4,6 @@ package com.train.portal.booking;
 import com.train.portal.booking.modal.BookRequest;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
-
 @RestController
 @RequestMapping("/book")
 public class BookingController {
@@ -30,10 +28,4 @@ public class BookingController {
         bookingService.bookTicket(bookRequest);
 
     }
-    
-    @GetMapping("")
-    private Map<String, Map<String, Map<Integer, String>>> getAllBookings() {
-        return bookingService.getAllBooking();
-    }
-
 }

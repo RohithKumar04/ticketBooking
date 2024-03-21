@@ -11,9 +11,11 @@ public class ExceptionHandlerAdvice extends ResponseEntityExceptionHandler {
 
 
     @ExceptionHandler(value
-            = {SeatAlreadyBookedException.class})
-    protected ResponseEntity<String> handleConflict(RuntimeException ex) {
+            = {SeatAlreadyBookedException.class, UserAlreadyExistsException.class, UserNotFoundException.class})
+    protected ResponseEntity<String> internalServerError(RuntimeException ex) {
 
         return ResponseEntity.internalServerError().body(ex.getMessage());
     }
+
+
 }

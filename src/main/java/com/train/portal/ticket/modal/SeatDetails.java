@@ -1,4 +1,4 @@
-package com.train.portal.user.modal;
+package com.train.portal.ticket.modal;
 
 import lombok.Builder;
 import lombok.Data;

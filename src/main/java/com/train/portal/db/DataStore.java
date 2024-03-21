@@ -2,7 +2,7 @@ package com.train.portal.db;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.train.portal.user.modal.UserDetails;
+import com.train.portal.ticket.modal.UserDetails;
 import lombok.Data;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
