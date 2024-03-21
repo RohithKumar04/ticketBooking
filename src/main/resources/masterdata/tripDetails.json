@@ -1,0 +1,11 @@
+{
+    "LON-BER": {
+        "from": "LON",
+        "to": "BER",
+        "price": 5,
+        "vacantSeats": {
+            "A": 50,
+            "B": 50
+        }
+    }
+}
