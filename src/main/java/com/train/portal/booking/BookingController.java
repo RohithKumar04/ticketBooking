@@ -2,6 +2,7 @@ package com.train.portal.booking;
 
 
 import com.train.portal.booking.modal.BookRequest;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -24,7 +25,7 @@ public class BookingController {
 //            "plastName": "kumar"
 //    }
     @PostMapping("")
-    private void bookTicket(@RequestBody BookRequest bookRequest) {
+    private void bookTicket(@Valid @RequestBody BookRequest bookRequest) {
         bookingService.bookTicket(bookRequest);
 
     }
